@@ -1,0 +1,75 @@
+.calculate-block {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 20px;
+}
+.input-container {
+  position: relative;
+}
+.input-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+.input-container input {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.input-container input:focus {
+  border-color: #007bff;
+}
+.dropdown select {
+  width: 220px;
+  max-width: 220px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #fff;
+}
+.dropdown select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.dropdown label {
+  display: block;
+  margin-bottom: 10px;
+}
+.from-to {
+  display: flex;
+  gap: 20px;
+}
+#calculate {
+  background-color: #007bff;
+  color: white;
+  height: 44px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#calculate:hover {
+  background-color: #0056b3;
+}
+.output {
+  display: none;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: white;
+}
+.result {
+  display: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  background-color: #e64553;
+}

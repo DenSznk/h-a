@@ -1,0 +1,10 @@
+
+Task 1
+https://www.w3schools.com/js/js_object_iterables.asp
+https://stackoverflow.com/questions/36976832/what-is-the-meaning-of-symbol-iterator-in-this-context
+
+Task 2
+https://www.geeksforgeeks.org/how-to-create-an-object-with-prototype-in-javascript/
+https://www.w3schools.com/js/js_object_definition.asp
+https://www.w3schools.com/js/js_object_prototypes.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
