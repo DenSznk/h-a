@@ -18,7 +18,11 @@ function processData() {
   const from = document.getElementById("from").value;
   const to = document.getElementById("to").value;
   const result = document.querySelector(".result");
-  if (dataFromUser) {
+  if (!dataFromUser) {
+    result.style.backgroundColor = "#e64553";
+    result.textContent = errorMessage;
+    result.style.display = "block";
+  } else {
     fetch(generateURL(dataFromUser, from, to))
       .then((response) => {
         return response.json();
@@ -38,8 +42,5 @@ function processData() {
         result.textContent = "Error fetching data";
         result.style.display = "block";
       });
-  } else {
-    result.textContent = errorMessage;
-    result.style.display = "block";
   }
 }
