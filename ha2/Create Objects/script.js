@@ -1,7 +1,8 @@
 function createUsers(name, age) {
-  const result = [];
-  result.push(defProperties(name, age));
-  result.push(objCreate(name, age));
+  const result = [
+    defProperties(name, age),
+    objCreate(name, age)
+  ];
   return result;
 }
 
