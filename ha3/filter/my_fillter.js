@@ -12,7 +12,10 @@ Array.prototype.myFilter = function (callback) {
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const test = numbers.myFilter((element) => {
+const test = numbers.myFilter((element, index, arr) => {
+//   console.log(`Current index =====> ${index}`);
+//   console.log(`Arr =====> ${arr}`);
+
   return element > 5;
 });
 
