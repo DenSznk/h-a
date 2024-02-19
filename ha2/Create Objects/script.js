@@ -38,11 +38,11 @@ function fromObjCreate(name, age) {
 }
 
 function fromMyEntries(name, age) {
-  const entries = [
+  const obj = [
     ["name", name],
     ["age", age],
   ];
-  return Object.fromEntries(entries);
+  return Object.fromEntries(obj);
 }
 
 function fromProto(name, age) {
@@ -54,6 +54,5 @@ function fromProto(name, age) {
   }
   return result;
 }
-// console.log(fromProto("John", 35));
 
 console.log(createUsers("John", 35));
