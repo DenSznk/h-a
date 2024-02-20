@@ -19,8 +19,23 @@ class Calculator {
   logSum() {
     return this.x + this.y;
   }
+  logMul() {
+    return this.x * this.y;
+  }
+  logSub() {
+    return this.x - this.y;
+  }
+  logDiv() {
+    if (this.y !== 0) {
+        return this.x / this.y;
+    } else {
+        throw new Error("Zero division error")
+    }
+
+  }
+
 }
 
-const test = new Calculator("13", 2);
-
-console.log(test.logSum());
+const test = new Calculator(12, 4);
+test.setX('16')
+console.log(test.logDiv());// => 4 not Error
