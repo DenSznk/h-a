@@ -3,7 +3,7 @@ class Calculator {
     if (this.checkData(x) && this.checkData(y)) {
       this.setX(x);
       this.setY(y);
-    } else throw new Error("Bad data");
+    } else throw new Error("Value must be a number");
   }
   setX(number) {
     this.x = number;
