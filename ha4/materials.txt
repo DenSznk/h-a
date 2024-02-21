@@ -2,3 +2,4 @@ calculator
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties

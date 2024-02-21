@@ -3,3 +3,6 @@ https://www.freecodecamp.org/news/how-to-write-your-own-map-filter-and-reduce-fu
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 https://medium.com/@nicholasstano/writing-your-own-filter-map-and-reduce-functions-in-javascript-c116f2addc5
 https://stackoverflow.com/questions/72932926/how-do-you-build-your-own-filter-that-is-similar-to-the-native-built-in-filter
+
+alert swap
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
