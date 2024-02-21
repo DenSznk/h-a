@@ -36,6 +36,9 @@ class Calculator {
 
 }
 
-const test = new Calculator(12, 4);
-test.setX('16')
-console.log(test.logDiv());// => 4 not Error
+const calculator = new Calculator(12, 4);
+// calculator.setX(undefined)
+// console.log(calculator.logMul()); => NaN
+
+const logSumRef = calculator.logSum.bind(calculator);
+console.log(logSumRef()); // still works
