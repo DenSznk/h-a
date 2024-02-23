@@ -4,3 +4,4 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties
 calculator context
 https://medium.com/@josephcastrigno/4-ways-to-preserve-execution-context-in-javascript-33c747e15310
+https://javascript.info/bind#:~:text=bind(context%2C%20...,For%20example%2C%20to%20setTimeout%20.
