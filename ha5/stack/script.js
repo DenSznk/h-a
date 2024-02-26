@@ -1,9 +1,10 @@
 class Stack {
   stack = [];
   constructor(maxElementsAmount = 10) {
-    this.maxElementsAmount = maxElementsAmount;
+    if (typeof maxElementsAmount === "number" && !isNaN(maxElementsAmount) && isFinite(maxElementsAmount)) {
+        this.maxElementsAmount = maxElementsAmount;
+    } else throw new Error("Not correct value")
   }
-
   push(num) {
     if (this.stack.length < this.maxElementsAmount) {
       this.stack.push(num);
@@ -26,18 +27,17 @@ class Stack {
   toArray() {
     return this.stack
   }
+  isEmpty () {
+    return this.stack.length === 0
+  }
+  fromIterable(iterable) {
+    const newStack = new Stack()
+
+    return newStack
+  }
+
 }
 
-const test = new Stack(5);
-// test.push(5)
-// test.push(5)
-// test.push(5)
-// test.push(5)
-// test.push(5)
-// test.pop()
-// test.pop()
-// test.pop()
-// test.pop()
-// test.pop()
-// test.pop()
-console.log(test.stack);
+const test = new Stack(12);
+console.log(test.isEmpty())
+console.log(test.maxElementsAmount);
