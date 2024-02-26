@@ -1,6 +1,6 @@
 class Calculator {
   constructor(x, y) {
-    if (this.#isValidNumber(x) && this.#isValidNumber(y)) {
+    if (Calculator.isValidNumber(x) && Calculator.isValidNumber(y)) {
       this.#setX(x);
       this.#setY(y);
     } else throw new Error("Value must be a number");
@@ -14,7 +14,7 @@ class Calculator {
   #setY(number) {
     this.y = number;
   }
-  #isValidNumber(number) {
+  static isValidNumber(number) {
     if (typeof number === "number" && !isNaN(number) && isFinite(number)) {
       return true;
     } else false;
