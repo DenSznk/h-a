@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="stopwatch">
+        <div class="stopwatch__display">
+          <span class="stopwatch__time--hours">00</span>
+          <span class="stopwatch__unit">Hours</span>
+          <span class="stopwatch__time--minutes">00</span>
+          <span class="stopwatch__unit">Minutes</span>
+          <span class="stopwatch__time--seconds">00</span>
+          <span class="stopwatch__unit">Seconds</span>
+        </div>
+        <div class="stopwatch__controls">
+          <button class="stopwatch__control stopwatch__control--start">
+            Start
+          </button>
+          <button class="stopwatch__control stopwatch__control--stop">
+            Stop
+          </button>
+          <button class="stopwatch__control stopwatch__control--reset">
+            Reset
+          </button>
+        </div>
+      </div>
+      <div class="timer">
+        <div class="timer__display">
+          <span id="hours" class="stopwatch__time--hours">00</span>
+          <span class="stopwatch__unit">Hours</span>
+          <span id="minutes" class="stopwatch__time--minutes ">00</span>
+          <span class="stopwatch__unit">Minutes</span>
+          <span id="seconds" class="stopwatch__time--seconds">12</span>
+          <span class="stopwatch__unit">Seconds</span>
+        </div>
+        <div class="timer__inputs">
+          <input type="text" class="timer__input timer__input--hours"placeholder="Hours"/>
+          <input type="text" class="timer__input timer__input--minutes" placeholder="Minutes"/>
+          <input type="text" class="timer__input timer__input--seconds" placeholder="Seconds"/>
+        </div>
+        <div class="timer__timeout">
+            <span class="timer__timeout">Timeout!</span>
+        </div>
+        <div class="timer__control">
+            <button class="timer_start button_control">Start</button>
+            <button class="timer_stop button_control">Stop</button>
+        </div>
+      </div>
+    </div>
+    <script src="stopwatch.js"></script>
+    <script src="timer.js"></script>
+  </body>
+</html>
