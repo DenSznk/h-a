@@ -1,10 +1,6 @@
-const stopwatchStartButton = document.querySelector(
-  ".stopwatch__control--start"
-);
+const stopwatchStartButton = document.querySelector(".stopwatch__control--start");
 const stopwatchStopButton = document.querySelector(".stopwatch__control--stop");
-const stopwatchResetButton = document.querySelector(
-  ".stopwatch__control--reset"
-);
+const stopwatchResetButton = document.querySelector(".stopwatch__control--reset");
 const stopwatchHours = document.querySelector(".stopwatch__time--hours");
 const stopwatchMinutes = document.querySelector(".stopwatch__time--minutes");
 const stopwatchSeconds = document.querySelector(".stopwatch__time--seconds");
