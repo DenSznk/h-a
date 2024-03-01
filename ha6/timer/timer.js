@@ -60,7 +60,7 @@ function startTimer() {
   timeoutMessage.style.display = "none";
 
   let totalSeconds = totalTimeInSeconds(hours, minutes, seconds);
-  //blocking the start button click if the inputs are empty
+  //blocking the start button if the inputs are empty
   if (totalSeconds === 0) {
     return
   }
