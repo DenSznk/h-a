@@ -50,11 +50,25 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  transition: all 0.5s ease;
 }
 .stopwatch__control:active,
 .button_control:active {
   background-color: #cccccc;
 }
+.timer_stop:hover {
+  color: white;
+  background-color: rgb(191, 110, 90);
+  transform: scale(1.2);
+  letter-spacing:0.1cap;
+}
+.timer_start:hover {
+  color: white;
+  background-color: rgb(87, 156, 111);
+  transform: scale(1.2);
+  letter-spacing:0.1cap;
+}
+
 .timer_start {
   color: white;
   background-color: rgb(20, 139, 62);
@@ -67,12 +81,33 @@ button {
 .stopwatch__control--start {
   color: white;
   background-color: rgb(20, 139, 62);
+
+}
+.stopwatch__control--start:hover {
+  color: white;
+  background-color: rgb(87, 156, 111);
+  transform: scale(1.2);
+  letter-spacing:0.1cap;
+
 }
 .stopwatch__control--stop {
   color: white;
   background-color: rgb(165, 63, 38);
 }
+.stopwatch__control--stop:hover {
+  color: white;
+  background-color: rgb(191, 110, 90);
+  transform: scale(1.2);
+  letter-spacing:0.1cap;
+}
 .stopwatch__control--reset {
   color: white;
   background-color: rgb(100, 99, 98);
 }
+.stopwatch__control--reset:hover {
+  color: white;
+  background-color: rgb(132, 131, 129);
+  transform: scale(1.2);
+  letter-spacing:0.1cap;
+}
+
