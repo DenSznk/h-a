@@ -1,20 +1,36 @@
-const button = document.querySelector('.my-button');
+const button = document.querySelector(".my-button");
 
-function returnTrueOrFalse () {
-    let random = Math.random();
-    if (random < 0.5) {
-        return true
-    } else {
-        return false
-    }
+button.addEventListener("mouseover", moveButtonOnHover);
+button.addEventListener("click", moveButtonOnClick);
+
+function returnTrueOrFalse() {
+  let random = Math.random();
+  if (random < 0.5) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function moveButtonOnHover () {
-    if (returnTrueOrFalse) {
-        let randomX = Math.floor(Math.random() * window.innerWidth);
-        let randomY = Math.floor(Math.random() * window.innerHeight);
-        button.style.left = randomX + 'px';
-        button.style.top = randomY + 'px';
-    }
+function moveButtonOnHover() {
+  const screenWidth = window.innerWidth - button.offsetWidth;
+  const screenHeight = window.innerHeight - button.offsetHeight;
+
+  const randomX = Math.floor(Math.random() * screenWidth);
+  const randomY = Math.floor(Math.random() * screenHeight);
+  if (returnTrueOrFalse()) {
+    button.style.left = randomX + "px";
+    button.style.top = randomY + "px";
+  }
 }
 
+function moveButtonOnClick() {
+  const screenWidth = window.innerWidth - button.offsetWidth;
+  const screenHeight = window.innerHeight - button.offsetHeight;
+
+  const randomX = Math.floor(Math.random() * screenWidth);
+  const randomY = Math.floor(Math.random() * screenHeight);
+
+  button.style.left = randomX + "px";
+  button.style.top = randomY + "px";
+}
